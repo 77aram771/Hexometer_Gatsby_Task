@@ -1,31 +1,55 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "0BSD",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
+  "name": "Hexometer_Task",
+  "description": "Hexometer Task",
+  "version": "0.0.1",
+  "author": "Aram Grigoryan <77aram39@gmail.com>",
   "dependencies": {
-    "gatsby": "^3.2.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "3d-react-carousal": "^3.1.0",
+    "@iconify-icons/akar-icons": "^1.1.8",
+    "@iconify-icons/ant-design": "^1.1.0",
+    "@iconify-icons/brandico": "^1.1.0",
+    "@iconify-icons/bx": "^1.1.0",
+    "@iconify-icons/codicon": "^1.1.12",
+    "@iconify-icons/el": "^1.1.0",
+    "@iconify/react": "^1.1.4",
+    "bootstrap": "^4.6.0",
+    "classnames": "^2.3.1",
+    "gatsby": "^2.32.9",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^3.10.0",
+    "gatsby-plugin-resolve-src": "^2.1.0",
+    "gatsby-plugin-sass": "^3.2.0",
+    "gatsby-source-filesystem": "^2.11.1",
+    "node-sass": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
+    "react-bootstrap-icons": "^1.4.0",
+    "react-dom": "^17.0.2",
+    "react-grid-carousel": "^1.0.1",
+    "react-helmet": "^6.1.0",
+    "react-spring": "^9.1.1",
+    "react-typewriting-effect": "^1.0.4",
+    "styled-components": "^5.2.3",
+    "typewriter-effect": "^2.17.0"
   },
-  "devDependencies": {
-    "prettier": "2.2.1"
+  "devDependencies": {},
+  "keywords": [
+    "gatsby",
+    "sass",
+    "scss"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "develop": "gatsby develop",
+    "lint": "Get started linting your code with Eslint and stylelint",
+    "format": "Get started formatting your code with Eslint, Prettier, and stylelint",
+    "start": "yarn develop",
+    "serve": "gatsby serve",
+    "test": "echo 'Write tests! -> https://gatsby.dev/unit-testing'"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "type": "git"
   }
 }

@@ -1,0 +1,128 @@
+@import "../../share/colors";
+
+.home_page-tenth-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-bottom: 120px;
+
+  .home_page-tenth-section-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    .home_page-tenth-section-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h2 {
+        color: $OuterSpace;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+
+      p {
+        text-align: center;
+        max-width: 700px;
+        margin: auto;
+      }
+    }
+  }
+
+  .home_page-tenth-section-box-info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 650px;
+
+    .home_page-tenth-section-box-info-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .home_page-tenth-section-box-info-icons {
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        background-color: #fefefe;
+        box-shadow: 0 30px 60px 0 rgba(12, 0, 46, 0.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        span {
+          font-size: 14px;
+          color: #323537;
+          margin-top: 5px;
+          font-weight: 400;
+        }
+      }
+
+      .tel-box {
+        top: 0 !important;
+        left: 260px !important;
+      }
+
+      .google-box {
+        top: 40px !important;
+        left: 405px !important;
+      }
+
+      .slack-box {
+        top: 180px !important;
+        left: 495px !important;
+      }
+
+      .wordpress-box {
+        top: 330px !important;
+        left: 495px !important;
+      }
+
+      .p-box {
+        top: 470px !important;
+        left: 405px !important;
+      }
+
+      .web-box {
+        top: 520px !important;
+        left: 260px !important;
+      }
+
+      .zep-box {
+        top: 470px !important;
+        left: 115px !important;
+      }
+
+      .gmail-box {
+        top: 330px !important;
+        left: 40px !important;
+      }
+
+      .trello-box {
+        top: 180px !important;
+        left: 40px !important;
+      }
+
+      .doc-box {
+        top: 40px !important;
+        left: 115px !important;
+      }
+    }
+  }
+}

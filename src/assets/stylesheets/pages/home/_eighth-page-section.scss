@@ -1,0 +1,127 @@
+@import "../../share/colors";
+
+.home_page-eighth-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+
+  .home_page-eighth-section-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    .home_page-eighth-section-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        color: $OuterSpace;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .home_page-eighth-info-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+
+    .home_page-eighth-info-box-first {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      span {
+        text-align: start;
+        margin-bottom: 1rem;
+        color: $OuterSpace;
+      }
+
+      .home_page-eighth-info-box-first-line-text-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 5px 0 20px 0;
+
+        .home_page-eighth-info-box-first-line-text-box-left {
+          width: 50%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+
+          span {
+            font-size: 12.8px;
+            margin: 0
+          }
+        }
+
+        .home_page-eighth-info-box-first-line-text-box-right {
+          width: 50%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+
+          span {
+            font-size: 12.8px;
+            margin: 0
+          }
+        }
+      }
+
+      .home_page-eighth-section-button {
+        margin: 20px 0 40px;
+
+        .button_hover {
+          max-width: 370px;
+          padding: 14px 42px !important;
+        }
+      }
+    }
+
+    .home_page-eighth-info-box-second {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-width: 440px;
+      }
+    }
+  }
+}
+
+@include adaptiv-to(phone-screens) {
+  .home_page-eighth-info-box {
+    flex-direction: column !important;
+
+    .home_page-eighth-info-box-first {
+      width: 100% !important;
+
+    }
+
+    .home_page-eighth-info-box-second {
+      width: 100% !important;
+
+      img {
+        width: 100% !important;
+        max-width: none !important;
+      }
+    }
+  }
+}

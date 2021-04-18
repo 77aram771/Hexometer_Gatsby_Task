@@ -1,0 +1,104 @@
+@import "../../share/colors";
+
+.home_page-sixth-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+
+  .home_page-sixth-section-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    .home_page-sixth-section-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        color: $OuterSpace;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .home_page-sixth-info-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+
+    .home_page-sixth-info-box-first {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      span {
+        text-align: start;
+        margin-bottom: 1rem;
+        color: $OuterSpace;
+      }
+
+      .home_page-sixth-info-box-first-line-text-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 5px 0 20px 0;
+
+        span {
+          font-size: 12.8px;
+          margin: 0
+        }
+      }
+
+      .home_page-sixth-section-button {
+        margin: 20px 0 40px;
+
+        .button_hover {
+          max-width: 370px;
+          padding: 14px 42px !important;
+        }
+      }
+    }
+
+    .home_page-sixth-info-box-second {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-width: 440px;
+      }
+    }
+  }
+}
+
+@include adaptiv-to(phone-screens) {
+  .home_page-sixth-info-box {
+    flex-direction: column !important;
+
+    .home_page-sixth-info-box-first {
+      width: 100% !important;
+    }
+
+    .home_page-sixth-info-box-second {
+      width: 100% !important;
+
+      img {
+        width: 100% !important;
+        max-width: none !important;
+      }
+    }
+  }
+}

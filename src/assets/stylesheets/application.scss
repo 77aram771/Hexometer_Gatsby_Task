@@ -1,0 +1,42 @@
+@import "components/__components";
+@import "pages/__pages";
+@import "./share/colors";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 16px/26px Poppins,sans-serif !important;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 30px!important;
+}
+
+h3 {
+  font-size: 27px!important;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  display: flex!important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.bghjHX {
+  margin: 0!important;
+}

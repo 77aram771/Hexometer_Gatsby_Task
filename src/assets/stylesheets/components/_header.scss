@@ -1,0 +1,250 @@
+@import "../share/colors";
+
+.shadowNav {
+  box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
+}
+
+.container {
+  background-color: $White;
+
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .5rem 0;
+    background-color: $White;
+
+    .nav-container {
+      background-color: $White;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: 25px 0;
+
+      .navbar-nav {
+        display: flex;
+        padding: 0 80px 0 50px;
+        justify-content: flex-start;
+        align-items: center;
+
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+
+          li {
+            list-style-type: none;
+            margin-left: 20px;
+            position: relative;
+
+            a {
+              display: inline-block;
+              text-decoration: none;
+              color: #323537;
+              padding: 0 8px;
+              font: 500 15px Poppins, sans-serif;
+            }
+
+            a:hover {
+              color: $Mountain_Meadow;
+            }
+
+            a::after {
+              content: '';
+              width: 0;
+              height: 1px;
+              display: block;
+              background: $Mountain_Meadow;
+              transition: 300ms;
+            }
+
+            a:hover::after {
+              color: $Mountain_Meadow;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .auto-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        .mobile_menu-icon-box {
+          display: none;
+
+          svg {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+
+    }
+
+    .nav-mobile {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+      padding: 25px;
+
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0;
+
+        li {
+          list-style-type: none;
+          margin-bottom: 20px;
+          position: relative;
+
+          a {
+            display: inline-block;
+            text-decoration: none;
+            color: #323537;
+            padding: 0 8px;
+            font: 500 15px Poppins, sans-serif;
+          }
+
+          a:hover {
+            color: $Mountain_Meadow;
+          }
+
+          a::after {
+            content: '';
+            width: 0;
+            height: 1px;
+            display: block;
+            background: $Mountain_Meadow;
+            transition: 300ms;
+          }
+
+          a:hover::after {
+            color: $Mountain_Meadow;
+            width: 100%;
+          }
+        }
+      }
+
+      .auto-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+
+        .button_hover {
+          width: 25%;
+        }
+      }
+    }
+
+  }
+}
+
+@include adaptiv-to(tablet-screens) {
+  .nav-container {
+    padding: 30px !important;
+
+    .navbar-nav {
+      padding-left: 0 !important;
+
+      ul {
+        li {
+          a {
+            font-size: 13px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include adaptiv-to(phone-screens) {
+  .bVoXXg {
+    img {
+      width: 80%;
+    }
+  }
+  .container nav .nav-mobile ul li a {
+    font-size: 30px !important;
+    margin-bottom: 25px !important;
+  }
+  .button_line span {
+    font-size: 35px !important;
+  }
+  .container {
+    nav {
+      padding: 30px;
+
+      .nav-container {
+        width: 100%;
+        padding: 20px !important;
+        justify-content: space-between !important;
+
+        img {
+          width: 400px;
+        }
+
+        .navbar-nav {
+          display: none !important;
+        }
+
+        .button_hover {
+          display: none !important;
+        }
+
+        .button_line {
+          display: none !important;
+        }
+
+        .mobile_menu-icon-box {
+          width: 50%;
+          margin: 0 0 0 50px;
+          display: flex !important;
+
+          svg {
+            width: 50px !important;
+            height: 50px !important;
+          }
+        }
+      }
+
+      .nav-mobile {
+        .mr-auto {
+          ul {
+            li {
+              a {
+                font-size: 30px !important;
+              }
+            }
+          }
+        }
+
+        .auto-box {
+          .button_hover {
+            width: 60%;
+
+            span {
+              font-size: 35px !important;
+            }
+          }
+
+          .button_line {
+            font-size: 40px !important;
+          }
+        }
+      }
+    }
+  }
+}

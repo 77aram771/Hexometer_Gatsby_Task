@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Hexometer_Gatsby_Task.iml" filepath="$PROJECT_DIR$/.idea/Hexometer_Gatsby_Task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gatsby-starter-sass-master.iml" filepath="$PROJECT_DIR$/.idea/gatsby-starter-sass-master.iml" />
     </modules>
   </component>
 </project>

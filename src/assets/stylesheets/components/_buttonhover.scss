@@ -1,0 +1,23 @@
+@import "../share/colors";
+
+.button_hover {
+  cursor: pointer;
+  padding: 8px 15px!important;
+  text-align: center;
+  border-radius: 45px;
+  background-color: $Mountain_Meadow;
+  transition: all .2s linear;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+  margin-right: 20px;
+  span {
+    color: $White !important;
+    font: 500 14px Poppins,sans-serif;
+  }
+
+  &:hover {
+    background-color: $White;
+    span {
+      color: $Mountain_Meadow !important;
+    }
+  }
+ }

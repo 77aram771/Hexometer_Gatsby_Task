@@ -1,0 +1,100 @@
+@import "../../share/colors";
+
+.home_page-first-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+
+  .home_page-first-section-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    .home_page-first-section-left {
+      width: 50%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      .home_page-first-section-write-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+
+      .home_page-first-section-info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        h2 {
+          margin: 20px 0;
+          text-align: start;
+          color: $OuterSpace;
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        span {
+          text-align: start;
+          margin-bottom: 1rem;
+          color: $OuterSpace;
+
+        }
+      }
+    }
+
+    .home_page-first-section-button {
+      margin: 20px 0 40px;
+
+      .button_hover {
+        max-width: 370px;
+        padding: 14px 42px !important;
+      }
+    }
+
+    .home_page-first-section-right {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 15px;
+
+      img {
+        vertical-align: middle;
+        max-width: 100%;
+        margin-right: -20px;
+      }
+    }
+  }
+}
+
+@include adaptiv-to(phone-screens) {
+  .home_page-first-section {
+    margin-top: 220px!important;
+    .home_page-first-section-box {
+      flex-direction: column!important;
+      .home_page-first-section-left {
+        width: 100%;
+      }
+      .home_page-first-section-right {
+        width: 100%;
+      }
+    }
+  }
+}
+

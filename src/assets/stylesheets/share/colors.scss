@@ -1,0 +1,28 @@
+$Mountain_Meadow: #16AC59;
+$White: #fff;
+$OuterSpace: #323537;
+
+$comp: 1024px;
+$tablet: 769px;
+$phone: 320px;
+
+@mixin adaptiv-to($media) {
+  @if $media == phone-screens {
+    @media only screen
+    and (max-width: $tablet - 1) {
+      @content;
+    }
+  } @else if $media == tablet-screens {
+    @media only screen
+    and (min-width: $tablet)
+    and (max-width: $comp) {
+      @content;
+    }
+  } @else if $media == comp-screens {
+    @media only screen
+    and (min-width: $comp + 1)
+    and (min-width: $comp) {
+      @content;
+    }
+  }
+}
